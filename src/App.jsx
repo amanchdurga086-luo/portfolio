@@ -22,13 +22,13 @@ import {
 } from "./components/Icons";
 
 const nav = [
-  "About",
-  "Skills",
-  "Projects",
-  "Experience",
-  "Education",
-  "DSA",
-  "contact",
+  ["About", "about"],
+  ["Expertise", "skills"],
+  ["Projects", "projects"],
+  ["Experience", "experience"],
+  ["Education", "education"],
+  ["DSA", "dsa"],
+  ["Let's talk", "contact"],
 ];
 const IconLink = ({ type, href, label }) => {
   const Icon = { github: Github, linkedin: Linkedin, email: Mail }[type];
@@ -75,17 +75,15 @@ function App() {
             <span>&lt;/&gt;</span>AC
           </a>
           <div className={`nav-links ${menuOpen ? "open" : ""}`}>
-            {nav.map((x) => (
+            {nav.map(([label, target]) => (
               <a
+                key={target}
                 onClick={() => setMenuOpen(false)}
-                href={`#${x.toLowerCase()}`}
+                href={`#${target}`}
               >
-                {x}
+                {label}
               </a>
             ))}
-            {/* <a className="nav-resume" href={personal.resumeUrl} download>
-              Resume <Download size={14} />
-            </a> */}
           </div>
           <div className="nav-actions">
             <button
@@ -112,8 +110,11 @@ function App() {
               {/* <i /> Available for internships */}
             </p>
             <h1>
-              Hi, I’m <em>Aman</em><br />I solve real-world problems with code
-
+              <span>Hi, I’m Aman</span>
+              <span>
+                I solve <em>real-world</em>
+              </span>
+              <span>problems with code</span>
             </h1>
             <p className="lede">{personal.intro}</p>
             <div className="actions">
@@ -127,7 +128,7 @@ function App() {
               >
                 Download resume <Download size={16} />
               </a>
-              <a href="#contact" className="button secondary">
+              <a href="https://mail.google.com/mail/?view=cm&amp;to=amanchdurga086%40gmail.com" className="button secondary" target="_blank" rel="noopener noreferrer">
                 Contact me <Mail size={16} />
               </a>
             </div>
@@ -146,7 +147,17 @@ function App() {
             </div>
           </div>
           <div className="hero-photo reveal">
+            <span className="portrait-label portrait-label-top">
+              <span>FIG. 001</span>
+              <span>THE MINDSET</span>
+            </span>
             <img src="/aman-chaudhary-hero.png" alt="Aman Chaudhary" />
+            <span className="portrait-caption">Engineering with intention</span>
+            <span className="portrait-index">01 / 06</span>
+            {/* <span className="portrait-status">
+              <i />
+              Currently writing my next chapter.
+            </span> */}
           </div>
           <div className="hero-orb" />
         </section>
