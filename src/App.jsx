@@ -123,12 +123,19 @@ function App() {
               </a>
               <a
                 href={personal.resumeUrl}
-                download
+                // download
+                target="_blank"
+                rel="noopener noreferrer"
                 className="button secondary"
               >
-                Download resume <Download size={16} />
+                My resume <ArrowUpRight size={16} />
               </a>
-              <a href="https://mail.google.com/mail/?view=cm&amp;to=amanchdurga086%40gmail.com" className="button secondary" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://mail.google.com/mail/?view=cm&amp;to=amanchdurga086%40gmail.com"
+                className="button secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Contact me <Mail size={16} />
               </a>
             </div>
@@ -172,7 +179,9 @@ function App() {
               <div className="note-card">
                 <Code2 />
                 <p>
-                  Building with MongoDB, Express.js, React.js, and Node.js, while strengthening my foundation in Java, OOP, and software design principles.
+                  Building with MongoDB, Express.js, React.js, and Node.js,
+                  while strengthening my foundation in Java, OOP, and software
+                  design principles.
                 </p>
               </div>
               <div className="note-card stat">
@@ -383,13 +392,25 @@ function App() {
             </div>
             <div className="platforms">
               <p>Platforms</p>
-              <a href="https://leetcode.com/u/amanchud850/" target="_blank" rel="noreferrer">
+              <a
+                href="https://leetcode.com/u/amanchud850/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 LeetCode <ArrowUpRight size={16} />
               </a>
-              <a href="https://www.hackerrank.com/profile/amanchdurga086" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.hackerrank.com/profile/amanchdurga086"
+                target="_blank"
+                rel="noreferrer"
+              >
                 HackerRank <ArrowUpRight size={16} />
               </a>
-              <a href="https://www.interviewbit.com/profile/aman-chaudhary_202/" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.interviewbit.com/profile/aman-chaudhary_202/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 InterviewBit <ArrowUpRight size={16} />
               </a>
             </div>
@@ -416,11 +437,11 @@ function App() {
           <div className="container contact-grid">
             <div className="reveal">
               <span className="eyebrow">Get in touch</span>
-              <h2>
-                Have a project or opportunity in mind?
-              </h2>
+              <h2>Have a project or opportunity in mind?</h2>
               <p>
-                I'm open to SDE internships and frontend or full-stack development opportunities. Feel free to reach out to discuss a role, project, or collaboration.
+                I'm open to SDE internships and frontend or full-stack
+                development opportunities. Feel free to reach out to discuss a
+                role, project, or collaboration.
               </p>
               {/* <div className="contact-social">
                 <IconLink
