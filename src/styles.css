@@ -784,17 +784,37 @@ pre f {
   white-space: nowrap;
 }
 .footer-inner {
-  padding: 26px 0;
+  padding: 22px 0 18px;
   border-top: 1px solid var(--line);
   display: flex;
   align-items: center;
-  gap: 25px;
-  font-size: 11px;
+  justify-content: space-between;
+  gap: 18px;
+  font-size: 12px;
+  line-height: 1.5;
   color: var(--muted);
+}
+.footer-inner .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+.footer-inner .brand span {
+  color: var(--accent);
 }
 .footer-inner p {
   margin: 0;
   flex: 1;
+  text-align: center;
+  min-width: 0;
+}
+.footer-inner > span:last-child {
+  white-space: nowrap;
+  color: var(--muted);
 }
 .reveal {
   opacity: 0;

@@ -436,7 +436,7 @@ function App() {
         <section id="contact" className="contact">
           <div className="container contact-grid">
             <div className="reveal">
-              <span className="eyebrow">Get in touch</span>
+              {/* <span className="eyebrow">Get in touch</span> */}
               <h2>Have a project or opportunity in mind?</h2>
               <p>
                 I'm open to SDE internships and frontend or full-stack
@@ -518,7 +518,7 @@ function App() {
           <a className="brand" href="#home">
             <span>&lt;/&gt;</span>AC
           </a>
-          <p>Building, learning, and solving one problem at a time.</p>
+          {/* <p>Building, learning, and solving one problem at a time.</p> */}
           <span>© 2026 Aman Chaudhary.</span>
         </div>
       </footer>
